@@ -6,6 +6,9 @@ from .models import Ctegory,Subcategory,Product,ProductImg,ProductVidio
 class SubcategoryInline(admin.TabularInline):
     model = Subcategory
     extra = 0
+    prepopulated_fields = {
+        'slug':('name',)
+    }
 
 class ProductImageInline(admin.TabularInline):
     model = ProductImg
@@ -21,6 +24,9 @@ class CategoryAdmin(admin.ModelAdmin):
     inlines = [
         SubcategoryInline
     ]
+    prepopulated_fields = {
+        'slug':('name',)
+    }
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
@@ -31,6 +37,10 @@ class ProductAdmin(admin.ModelAdmin):
         ProductImageInline,
         ProductVidioInline
     ]
+    prepopulated_fields = {
+        'slug':('name',)
+    }
+
     def get_image(self, product):
         images = product.productimg_set.all()
         if images:

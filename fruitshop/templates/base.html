@@ -1,0 +1,106 @@
+{% load static %}
+
+
+    <head>
+        <meta charset="utf-8">
+        <title>Fruitables - Vegetable Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        {% include 'style/style/_goglestyle.html' %}
+        <!-- Icon Font Stylesheet -->
+        {% include 'style/style/_iconstyle.html' %}
+        <!-- Libraries Stylesheet -->
+        {% include 'style/style/_style.html' %}
+        <!-- Customized Bootstrap Stylesheet -->
+        {% include 'style/style/_custunumstyle.html' %}
+        <!-- Template Stylesheet -->
+        {% include 'style/style/_templatestyle.html' %}
+
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        {% include 'components/spinner/_spinner.html' %}
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        {% include 'components/navbar/_navbar.html' %}
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        {% include 'components/search/_search.html' %}
+        <!-- Modal Search End -->
+
+
+        <!-- Hero Start -->
+        {% include 'components/hero/_hero.html' %}
+        <!-- Hero End -->
+
+
+        <!-- Featurs Section Start -->
+        {% include 'components/featurs/_featurs.html' %}
+        <!-- Featurs Section End -->
+
+
+        <!-- Fruits Shop Start-->
+        {% include 'shop/fruits/_fruits.html' %}
+        <!-- Fruits Shop End-->
+
+
+        <!-- Featurs Start -->
+        {% include 'components/featurs/_featurs2.html' %}
+        <!-- Featurs End -->
+
+
+        <!-- Vesitable Shop Start-->
+        {% include 'shop/vesitable/_vesitable.html' %}
+        <!-- Vesitable Shop End -->
+
+
+        <!-- Banner Section Start-->
+        {% include 'shop/banner/_banner.html' %}
+        <!-- Banner Section End -->
+
+
+        <!-- Bestsaler Product Start -->
+        {% include 'shop/bestsaler/_bestsaler.html' %}
+        <!-- Bestsaler Product End -->
+
+
+        <!-- Fact Start -->
+        {% include 'shop/fact/_fact.html' %}
+        <!-- Fact Start -->
+
+
+        <!-- Tastimonial Start -->
+        {% include 'shop/tastimonial/_tastimonial.html' %}
+        <!-- Tastimonial End -->
+
+
+        <!-- Footer Start -->
+        {% include 'components/featurs/_featurs.html' %}
+        <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        {% include 'components/copyright/_copyright.html' %}
+        <!-- Copyright End -->
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    {% include 'style/js/_script.html' %}
+    <!-- Template Javascript -->
+    {% include 'style/js/_templatescript.html' %}
+    </body>
+
+</html>
