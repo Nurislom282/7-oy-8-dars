@@ -26,3 +26,23 @@ class ProductView(ListView):
         context = super().get_context_data()
         context["categories"] = Ctegory.objects.all()
         return context
+
+class CardView(ListView):
+    model = Product
+    template_name = "shop/card.html"
+    context_object_name = "products"
+
+    def get_context_data(self, object_list = None ,**kwargs):
+        context = super().get_context_data()
+        context["categories"] = Ctegory.objects.all()
+        return context
+
+class shop(ListView):
+    model = Product
+    template_name = "shop/shop.html"
+    context_object_name = "products"
+
+    def get_context_data(self, object_list = None ,**kwargs):
+        context = super().get_context_data()
+        context["categories"] = Ctegory.objects.all()
+        return context
